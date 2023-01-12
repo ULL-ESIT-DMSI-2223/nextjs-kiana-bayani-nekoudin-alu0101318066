@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./index.module.css";
 
 //Código para las imágenes
-export default function Home() {
+/*export default function Home() {
   const [promptInput, setPrompt] = useState("");
   const [result, setResult] = useState("");
 
@@ -48,11 +48,11 @@ export default function Home() {
     </div>
   );
 
-}
+}*/
 
 
 // Código para los nombres
-/*export default function Home() {
+export default function Home() {
   // Write the code
   const [animalInput, setAnimalInput] = useState("");
   const [result, setResult] = useState();
@@ -92,4 +92,4 @@ export default function Home() {
       </main>
     </div>
   );
-}*/
+}
