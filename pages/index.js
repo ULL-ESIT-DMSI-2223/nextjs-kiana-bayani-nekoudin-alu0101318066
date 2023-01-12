@@ -10,7 +10,7 @@ export default function Home() {
   async function onSubnit(event) {
     event.preventDefault();
     const response = await fetch("/api/generate", {
-      methor: "POST",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
