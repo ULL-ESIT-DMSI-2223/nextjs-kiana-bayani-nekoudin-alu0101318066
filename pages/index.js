@@ -5,9 +5,8 @@ import styles from "./index.module.css";
 export default function Home() {
   // Write the code
   const [animalInput, setAnimalInput] = useState("");
-  const [result, setResult] = useState("");
-
-  async function onSubnit(event) {
+  const [result, setResult] = useState();
+  async function onSubmit(event) {
     event.preventDefault();
     const response = await fetch("/api/generate", {
       method: "POST",
@@ -15,22 +14,21 @@ export default function Home() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ animal: animalInput }),
-      });
-      const data = await response.json();
-      setResult(data.result);
-      setAnimalInput("");
+    });
+    const data = await response.json();
+    setResult(data.result);
+    setAnimalInput("");
   }
   return (
     <div>
       <Head>
-        <title>OpenAI QuickStart</title>
+        <title>OpenAI Quickstart</title>
         <link rel="icon" href="/dog.png" />
       </Head>
-
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
         <h3>Name my pet</h3>
-        <form onSubmit={onSubnit}>
+        <form onSubmit={onSubmit}>
           <input
             type="text"
             name="animal"
