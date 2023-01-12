@@ -6,3 +6,5 @@ Primero completamos el código para la página generadora de nombres de index.js
 2. Generador de imágenes
 Para el generador de imágenes debemos modificar el código de index.js y crear en la carpeta /pages/api/ otro fichero para acceder a la generación de imágenes en lugar de buscar texto. Para hacer la petición a la API de OpenAI y escribir con POST a espera de una respuesta necesitamos este código en /pages/pai/images.js:
 
+Luego para adaptar el índice a la salida esperada cambiamos el texto para solicitar qué imagen quiere el cliente y finalmente la imprimimos por pantalla. Este sería el código para conseguirlo:
+
