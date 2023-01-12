@@ -5,11 +5,11 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-export default async function (req, res) {
+export default async function (req, res) { //es una funcion de servidor
   const completion = await openai.createCompletion({
     model: "text-davinci-002",
     prompt: generatePrompt(req.body.animal),
-    temperature: 0.6,
+    temperature: 0.6, //nivel de aletoriedad
   });
   res.status(200).json({ result: completion.data.choices[0].text });
 }
@@ -20,7 +20,8 @@ function generatePrompt(animal) {
   return `Suggest three names for an animal that is a superhero.
 
 Animal: Cat
-Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
+Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline 
+//el nombre con el que queriamos que llegara al servidor
 Animal: Dog
 Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
 Animal: ${capitalizedAnimal}
