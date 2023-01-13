@@ -5,8 +5,10 @@
 - [PRÁCTICA - NETX.JS](#práctica---netxjs)
   - [1. Generador de nombres](#1-generador-de-nombres)
   - [2. Generador de imágenes](#2-generador-de-imágenes)
-  - [3. Separación código en varios ficheros](#3-separación-código-en-varios-ficheros)
-  - [4. Ejercicios REST](#4-ejercicios-rest)
+  - [3. Despliegue en Netlify](#3-despliegue-en-netlify)
+  - [4. Separación código en varios ficheros](#4-separación-código-en-varios-ficheros)
+  - [5. Ejercicios REST](#5-ejercicios-rest)
+  - [6. Ejercicio de Rutas Dinámicas](#6-ejercicio-de-rutas-dinámicas)
 
 ## 1. Generador de nombres
 Para el generador de nombres debemos mdodifcar el código de index.js. Para hacer la petición a la API de OpenAI y escribir con POST a espera de una respuesta necesitamos el siguiente código:
@@ -31,7 +33,12 @@ Un ejemplo del funcionamiento es el siguiente:
 ![ejemplofetch](img/photo_generator.png)
 ![resultadoejemplo](img/caballo.png)
 
-## 3. Separación código en varios ficheros
+## 3. Despliegue en Netlify
+Se puede ver el despliegue en Netlify [pinchando aqui](https://coruscating-salamander-187647.netlify.app/):
+
+![netlify](img/netlify.png)
+
+## 4. Separación código en varios ficheros
 Primero creamos el índice en index.js:
 
 Los enlaces dentro del índice nos llevan a siguientes páginas: **/image**, **/pet**, **/404** que son los generadores de imagen y nombres y la página de error. 
@@ -52,7 +59,7 @@ Finalmente mostramos el despliegue:
 
 ![ejemplodespliegue](img/separacion_codigo.png)
 
-## 4. Ejercicios REST
+## 5. Ejercicios REST
 1. Todos los modelos:
 ![modelo](img/modelo.png)
 
@@ -70,3 +77,21 @@ La imagen generada es la siguiente:
 
 5. Moderación (clasifica si el texto viola el OpenAI's Content Policy):
 ![imagenmoderation](img/moderation.png)
+
+## 6. Ejercicio de Rutas Dinámicas
+Los siguientes ejercicios tratan de seguir un curso para entender las rutas dinámicas. Primero nos indica que vamos a aprender:
+
+![rutasdinamicas](img/rutasdinamicas.png)
+
+Luego es necesario descargar el repositorio donde completaremos los ejercicios propuestos:
+
+
+![descargacodigo](img/descarga_codigo.png)
+
+
+Nos recomienda personalizar la página para entender el código del mismo:
+
+Creamos [id].js para empezar a usar las rutas dinámicas. Para ello tenemos que modificar el código en post.js:
+
+
+
