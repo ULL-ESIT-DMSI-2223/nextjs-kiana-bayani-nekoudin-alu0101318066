@@ -91,7 +91,37 @@ Luego es necesario descargar el repositorio donde completaremos los ejercicios p
 
 Nos recomienda personalizar la página para entender el código del mismo:
 
+![personalizacion](img/personalizacion.png)
+
 Creamos [id].js para empezar a usar las rutas dinámicas. Para ello tenemos que modificar el código en post.js:
 
+![id1](img/id1.png)
 
+![id2](img/id2.png)
+
+![id3](img/id3.png)
+
+![id4](img/id4.png)
+
+Continuamos haciendo la página más completa a través de la modificación de algunos ficheros:
+
+![remark1](img/remark1.png)
+
+![remark2](img/remark2.png)
+
+Añadimos la fecha actual de la página:
+
+![fecha](img/fecha.png)
+
+![fecha1](img/fecha1.png)
+
+![fecha2](img/fecha2.png)
+
+Le damos un poco de formato a la página haciendo uso de CSS:
+
+![css](img/css.png)
+
+Planteamiento de una cuestión sobre lo aprendido:
+
+![cuestionaprendido](img/cuestion_aprendido.png)
 
