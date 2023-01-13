@@ -3,7 +3,6 @@ import Head from "next/head";
 import styles from "./index.module.css";
 
 function Home() {
-
   return (
     <div>
       <Head>
@@ -24,7 +23,6 @@ function Home() {
     </div>
   )
 }
-
 export default Home
 
 
